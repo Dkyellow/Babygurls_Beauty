@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babygurls Beauty Salon - Expert Nail Care & Artistry</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Experience the perfect blend of elegance and artistry at Babygurls Beauty Salon. We offer premium manicures, pedicures, gel nails, and custom nail art designed to complement your unique style. Book your appointment today!">
+    <meta name="keywords"
+        content="nail salon, manicure, pedicure, gel nails, nail art, nail extensions, beauty salon, spa, nail care, Babygurls Beauty">
+    <meta name="author" content="Babygurls Beauty Salon">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.babygurlsbeauty.com/"> <!-- Update with actual URL -->
+    <meta property="og:title" content="Babygurls Beauty Salon - Beautiful Nails, Beautiful You">
+    <meta property="og:description"
+        content="Experience the perfect blend of elegance and artistry at Babygurls Beauty Salon. Expert technicians, premium nail care, and custom designs.">
+    <meta property="og:image" content="images/hero-hand.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.babygurlsbeauty.com/"> <!-- Update with actual URL -->
+    <meta property="twitter:title" content="Babygurls Beauty Salon - Beautiful Nails, Beautiful You">
+    <meta property="twitter:description"
+        content="Experience the perfect blend of elegance and artistry at Babygurls Beauty Salon. Expert technicians, premium nail care, and custom designs.">
+    <meta property="twitter:image" content="images/hero-hand.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg"> <!-- Ensure this exists or use a generic one -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#">
+                    <h1>Babygurls Beauty</h1>
+                    <span>NAIL STUDIO</span>
+                </a>
+            </div>
+
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#contact" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="mobile-toggle" aria-label="Toggle Navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <h1>Best Nails For<br>Best Moments</h1>
+                    <p class="hero-description">Experience the perfect blend of elegance and artistry. Our expert
+                        technicians transform your nails into beautiful masterpieces that complement your unique style
+                        and elevate every special moment.</p>
+                    <a href="#booking" class="btn-primary">Find Out More</a>
+                </div>
+                <div class="hero-image-wrapper">
+                    <!-- Using the generated hand image as it fits the design better than the user's specific photos, 
+                         but the user's photos will be in the gallery -->
+                    <img src="images/hero-hand.png" alt="Close up of beautiful manicure" class="hero-img">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Icons Section -->
+        <section id="services" class="services-mini">
+            <div class="container services-mini-container">
+                <div class="service-icon-box">
+                    <div class="icon-circle">
+                        <!-- SVG for Nail Care -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                            <path d="M12 5v2" />
+                        </svg>
+                    </div>
+                    <h3>Manicure & Pedicure</h3>
+                    <p>Classic, gel, or French options for your hands and feet. Relaxing care and refined style.</p>
+                    <a href="#pricing" class="link-underlined">View Pricing</a>
+                </div>
+
+                <div class="service-icon-box">
+                    <div class="icon-circle">
+                        <!-- SVG for Nail Art -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                            <line x1="9" y1="9" x2="9.01" y2="9" />
+                            <line x1="15" y1="9" x2="15.01" y2="9" />
+                        </svg>
+                    </div>
+                    <h3>Nail Art</h3>
+                    <p>Custom designs and patterns tailored to your personality. Let your nails be your canvas.</p>
+                    <a href="#gallery" class="link-underlined">View Gallery</a>
+                </div>
+
+                <div class="service-icon-box">
+                    <div class="icon-circle">
+                        <!-- SVG for Extensions -->
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4.5 9.5V4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v5.5" />
+                            <path d="M22 17v1a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-1" />
+                            <path d="M2 12h20" />
+                            <path d="m7 12 5 10 5-10" />
+                        </svg>
+                    </div>
+                    <h3>Extensions</h3>
+                    <p>Acrylic and gel extensions for length and strength. Durable and naturally beautiful.</p>
+                    <a href="#booking" class="link-underlined">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Glamour/Split Section (Using Updated Text) -->
+        <section class="glamour-section">
+            <div class="container glamour-container">
+                <div class="glamour-image-wrapper">
+                    <img src="images/glamour-model.png" alt="Glamorous model with beautiful nails">
+                </div>
+                <div class="glamour-content">
+                    <span class="subheading">GET YOUR SHINE ON</span>
+                    <h2>Choose the Glamour</h2>
+                    <p>Step into our elegant salon and discover a world where every detail matters. Our skilled artists
+                        use only the finest products to create stunning nail designs that reflect your personality.</p>
+
+                    <ul class="styled-list">
+                        <li>Premium quality nail products and polishes</li>
+                        <li>Expert technicians with years of experience</li>
+                        <li>Sanitary and hygienic environment</li>
+                        <li>Custom designs tailored to your style</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section (Restored & Styled) -->
+        <section id="pricing" class="pricing-section">
+            <div class="container">
+                <div class="pricing-header">
+                    <span class="subheading-center"
+                        style="display:block; text-align:center; font-size:0.75rem; text-transform:uppercase; letter-spacing:2px; color:#999; margin-bottom:0.5rem; font-weight:700;">Affordable
+                        Luxury</span>
+                    <h2>Our Pricing</h2>
+                </div>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h3>Manicure</h3>
+                        <div class="price"><span class="price-currency">$</span>25</div>
+                        <ul class="pricing-features">
+                            <li>Nail shaping</li>
+                            <li>Cuticle care</li>
+                            <li>Hand massage</li>
+                            <li>Polish application</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Pedicure</h3>
+                        <div class="price"><span class="price-currency">$</span>35</div>
+                        <ul class="pricing-features">
+                            <li>Foot soak</li>
+                            <li>Exfoliation</li>
+                            <li>Nail shaping</li>
+                            <li>Massage</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card"
+                        style="border-color: var(--primary-color); box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+                        <h3>Gel Nails</h3>
+                        <div class="price"><span class="price-currency">$</span>45</div>
+                        <ul class="pricing-features">
+                            <li>Long-lasting gel</li>
+                            <li>Nail shaping</li>
+                            <li>Cuticle care</li>
+                            <li>Shiny finish</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-card">
+                        <h3>Spa Combo</h3>
+                        <div class="price"><span class="price-currency">$</span>55</div>
+                        <ul class="pricing-features">
+                            <li>Full Manicure</li>
+                            <li>Full Pedicure</li>
+                            <li>Extended massage</li>
+                            <li>Paraffin treatment</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section (Using User's Images) -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="pricing-header"> <!-- Reusing header style -->
+                    <span class="subheading-center"
+                        style="display:block; text-align:center; font-size:0.75rem; text-transform:uppercase; letter-spacing:2px; color:#999; margin-bottom:0.5rem; font-weight:700;">Portfolio</span>
+                    <h2>Recent Works</h2>
+                </div>
+                <!-- Original slogan from user content: "Fresh, Shiny, Bright - Make your day shine" can go below -->
+
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="images/Adult woman hands with nail polish _ Premium PSD.jpeg" alt="Premium Designs">
+                        <div class="gallery-overlay">
+                            <h4>Premium Design</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Best Nails Designs for Women's.jpeg" alt="Best Nail Designs">
+                        <div class="gallery-overlay">
+                            <h4>Trends</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Hand model.jpeg" alt="Hand Model">
+                        <div class="gallery-overlay">
+                            <h4>Elegance</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="images/Nude Glossy Almond Nails.jpeg" alt="Nude Almond">
+                        <div class="gallery-overlay">
+                            <h4>Nude Glossy</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section (Restored) -->
+        <section id="booking" class="booking-section">
+            <div class="container">
+                <div class="pricing-header">
+                    <h2>Book Appointment</h2>
+                    <p style="color: #666;">Ready for your transformation? Secure your spot today.</p>
+                </div>
+
+                <form id="booking-form" class="booking-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select Service...</option>
+                                <option value="manicure">Manicure</option>
+                                <option value="pedicure">Pedicure</option>
+                                <option value="gel">Gel Nails</option>
+                                <option value="combo">Spa Combo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date *</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time *</label>
+                            <select id="time" name="time" required>
+                                <option value="">Select Time...</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group full">
+                            <label for="message">Notes</label>
+                            <textarea id="message" name="message" rows="4"></textarea>
+                        </div>
+                        <div class="form-group full">
+                            <button type="submit" class="btn-submit">Confirm Booking</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Shine Section (Design Element) -->
+        <section class="shine-section">
+            <div class="container shine-container">
+                <span class="subheading-center"
+                    style="display:block; text-align:center; font-size:0.75rem; text-transform:uppercase; letter-spacing:2px; color:#999; margin-bottom:0.5rem; font-weight:700;">FRESH,
+                    SHINY, BRIGHT</span>
+                <h2>Make your day shine</h2>
+                <div class="bottles-wrapper">
+                    <img src="images/polish-bottles.png" alt="Nail polish bottles">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="footer-contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Babygurls Beauty Salon</h4>
+                    <p>Beautiful Nails, Beautiful You.</p>
+                    <p>123 Beauty Street, City, State 12345</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p>+263 123 456 789</p>
+                    <p><a href="mailto:info@Babygurls Beautysalon.com">info@Babygurls Beautysalon.com</a></p>
+
+                    <div class="social-links" style="margin-top: 1.5rem;">
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="X (Twitter)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+                                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="WhatsApp">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li>Mon-Sat: 9:00 AM - 7:00 PM</li>
+                        <li>Sun: 10:00 AM - 5:00 PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Babygurls Beauty Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/263123456789" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+            </path>
+        </svg>
+    </a>
+
+    <!-- Supabase JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
