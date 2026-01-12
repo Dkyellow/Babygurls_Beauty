@@ -208,6 +208,80 @@
             color: #666;
             font-size: 1.1rem;
         }
+
+        /* Mobile Responsiveness for Table */
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .container {
+                margin: 1rem auto;
+            }
+
+            .welcome-banner h2 {
+                font-size: 1.8rem;
+            }
+
+            .bookings-table thead {
+                display: none;
+            }
+
+            .bookings-table,
+            .bookings-table tbody,
+            .bookings-table tr,
+            .bookings-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .bookings-table tr {
+                margin-bottom: 1.5rem;
+                border: 1px solid #eee;
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+                padding: 1rem 0;
+                background: var(--white);
+            }
+
+            .bookings-table td {
+                text-align: right;
+                padding: 0.75rem 1rem;
+                position: relative;
+                border-bottom: 1px solid #f5f5f5;
+                min-height: 45px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+
+            .bookings-table td:last-child {
+                border-bottom: none;
+                padding-top: 1rem;
+            }
+
+            .bookings-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 1rem;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 0.7rem;
+                color: #999;
+                letter-spacing: 0.5px;
+            }
+
+            .bookings-table td div {
+                text-align: right;
+            }
+        }
     </style>
 </head>
 
@@ -368,21 +442,23 @@
 
                 const row = `
                     <tr>
-                        <td>#${booking.id}</td>
-                        <td>
+                        <td data-label="ID">#${booking.id}</td>
+                        <td data-label="Status">
                             <span class="status-badge" style="background-color: ${statusColor}; color: ${textColor}">
                                 ${(booking.status || 'pending').toUpperCase()}
                             </span>
                         </td>
-                        <td style="font-weight: 700;">${booking.date}</td>
-                        <td>${booking.time}</td>
-                        <td>${booking.service.charAt(0).toUpperCase() + booking.service.slice(1)}</td>
-                        <td>
-                            <div style="font-weight: bold;">${booking.name}</div>
-                            <div style="font-size: 0.85rem; color: #666;">${booking.phone}</div>
+                        <td data-label="Date" style="font-weight: 700;">${booking.date}</td>
+                        <td data-label="Time">${booking.time}</td>
+                        <td data-label="Service">${booking.service.charAt(0).toUpperCase() + booking.service.slice(1)}</td>
+                        <td data-label="Customer">
+                            <div style="text-align: right;">
+                                <div style="font-weight: bold;">${booking.name}</div>
+                                <div style="font-size: 0.85rem; color: #666;">${booking.phone}</div>
+                            </div>
                         </td>
-                        <td>
-                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                        <td data-label="Actions">
+                            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: flex-end;">
                                 ${doneBtn}
                                 ${deleteBtn}
                                 <a href="${waLink}" target="_blank" class="action-btn btn-whatsapp" title="Send WhatsApp Reminder">💬</a>
