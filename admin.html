@@ -16,6 +16,10 @@
             --white: #ffffff;
         }
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Lato', sans-serif;
             background-color: var(--bg-light);
@@ -224,6 +228,20 @@
 
             .welcome-banner h2 {
                 font-size: 1.8rem;
+                word-wrap: break-word;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .stat-card {
+                padding: 1.5rem;
+            }
+
+            .stat-card .value {
+                font-size: 2.2rem;
             }
 
             .bookings-table thead {
@@ -267,18 +285,21 @@
                 content: attr(data-label);
                 position: absolute;
                 left: 1rem;
-                width: 45%;
+                width: 40%;
                 padding-right: 10px;
                 white-space: nowrap;
                 text-align: left;
                 font-weight: 700;
                 text-transform: uppercase;
-                font-size: 0.7rem;
+                font-size: 0.65rem;
                 color: #999;
                 letter-spacing: 0.5px;
             }
 
-            .bookings-table td div {
+            .bookings-table td>div,
+            .bookings-table td>span {
+                max-width: 60%;
+                word-wrap: break-word;
                 text-align: right;
             }
         }
