@@ -84,6 +84,35 @@
             margin-bottom: 1.5rem;
             font-size: 0.9rem;
         }
+
+        .password-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .password-container input {
+            padding-right: 45px;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: #d4a373;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            transition: opacity 0.3s;
+        }
+
+        .toggle-password:hover {
+            opacity: 0.7;
+        }
     </style>
 </head>
 
@@ -99,7 +128,13 @@
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required>
+                    <button type="button" id="toggle-password" class="toggle-password"
+                        aria-label="Toggle password visibility">
+                        👁️
+                    </button>
+                </div>
             </div>
             <button type="submit" class="btn-login" id="login-btn">Login</button>
         </form>
@@ -112,6 +147,14 @@
         const loginForm = document.getElementById('login-form');
         const loginBtn = document.getElementById('login-btn');
         const errorMsg = document.getElementById('error-msg');
+        const togglePassword = document.getElementById('toggle-password');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            togglePassword.textContent = type === 'password' ? '👁️' : '🙈';
+        });
 
         // Check if already logged in
         window.addEventListener('load', async () => {
